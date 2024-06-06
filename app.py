@@ -86,9 +86,9 @@ def main():
     st.title("Real time Vehicle Detection and Parking Space Analytics")
 
     # Model and video file paths
-    model_path = r'C:\Users\ChSuneetha\Desktop\Vehicle-Parkingdetection\yolov8s.pt'  # Update with your YOLOv8 model path
+    model_path = r'C:\Users\ChSuneetha\Desktop\Vehicle-Parkingdetection\yolov8s.pt'  # Update with your YOLOv8s model path & give the path of trained model
     video_path = st.file_uploader("Upload Video File", type=["mp4"])
-    output_folder = r'C:\Users\ChSuneetha\Desktop\Vehicle-Parkingdetection\output'  # Update with your output folder path
+    output_folder = r'C:\Users\ChSuneetha\Desktop\Vehicle-Parkingdetection\output'  # Update with your output folder path & give the path in which folder you want ot save the outputs
 
     # Define total parking spaces
     total_parking_spaces = st.number_input("Total Parking Spaces", min_value=1, step=1, value=100)
